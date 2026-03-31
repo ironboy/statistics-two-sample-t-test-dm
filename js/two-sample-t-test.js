@@ -1,4 +1,4 @@
-import * as helpers from './helpers.js'
+import * as helpers from './helpers.js';
 import { groups } from './load-data-and-make-groups.js';
 
 addMdToPage('## Tvåsidigt T-test');
