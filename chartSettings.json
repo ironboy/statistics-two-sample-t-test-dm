@@ -1,0 +1,7 @@
+{
+  "language": "sv-SE",
+  "packages": [
+    "corechart",
+    "gauge"
+  ]
+}
