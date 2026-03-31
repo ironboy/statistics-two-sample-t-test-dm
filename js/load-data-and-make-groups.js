@@ -1,5 +1,5 @@
 // Load the dataset from csv and sort on id
-let data = (await csvLoad('smokinghealth.csv'));
+let data = await csvLoad('smokinghealth.csv');
 data.sort((a, b) => a.ID > b.ID ? 1 : -1);
 
 // Copy data before remove non-answers to smoking_status
@@ -10,10 +10,22 @@ data = data.filter(x => x.smoking_status != 0);
 
 // How people responded?
 export let basicGroups = [
-  { label: 'har ej besvarat frågan', data: rawData.filter(x => x.smoking_status == 0) },
-  { label: 'rökare (för närvarande)', data: data.filter(x => x.smoking_status == 'currently smokes') },
-  { label: 'före detta rökare', data: data.filter(x => x.smoking_status == 'previously smoked') },
-  { label: 'icke-rökare (aldrig rökt)', data: data.filter(x => x.smoking_status == 'never smoked') },
+  { 
+    label: 'har ej besvarat frågan', 
+    data: rawData.filter(x => x.smoking_status == 0) 
+  },
+  {
+     label: 'rökare (för närvarande)', 
+     data: data.filter(x => x.smoking_status == 'currently smokes') 
+  },
+  { 
+    label: 'före detta rökare', 
+    data: data.filter(x => x.smoking_status == 'previously smoked') 
+  },
+  { 
+    label: 'icke-rökare (aldrig rökt)', 
+    data: data.filter(x => x.smoking_status == 'never smoked') 
+  }
 ]
 
 // Basic groups count (for pie chart)
