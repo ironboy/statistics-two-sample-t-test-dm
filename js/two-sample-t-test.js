@@ -1,6 +1,5 @@
 import * as helpers from './helpers.js'
 import { groups } from './load-data-and-make-groups.js';
-import tableFromData from './libs/tableFromData.js';
 
 addMdToPage('## Tvåsidigt T-test');
 let showExplanation = addDropdown('Visa förklaring', ['Ja', 'Nej'], 'Nej');

@@ -16,8 +16,6 @@ drawGoogleChart({
   options: {
     title: 'Icke-rökare, f.d. rökare och rökare',
     height: 500,
-    histogram: { bucketSize: 10 },
-
     pieHole: 0.4
   }
 });

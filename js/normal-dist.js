@@ -34,6 +34,6 @@ drawGoogleChart({
   ),
   options: {
     height: 400,
-    histogram: { bucketSize: 10 }
+    histogram: { bucketSize: 5 }
   }
 });
