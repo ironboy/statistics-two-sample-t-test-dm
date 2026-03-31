@@ -6,7 +6,7 @@ addMdToPage(`
   
   Men vi har modifierat det - hittat på nya värden för en variabel - **general_health**, så att den ska bli mera normalfördelad inom olika grupper.
 
-  Anledningen är att T-test bara är tillförlitliga på normalfördelad data och syftet med detta exempel är att visa hur **Shapiro-Wilks-test** och **tvåsidiga T-test** fungerar!
+  Anledningen är att T-test bara är tillförlitliga på normalfördelad data (detta är dock mindre viktigt om vi har >30, helst >100 mätvärden, så kanske det var onödigt att modifiera) och syftet med detta exempel är att visa hur **Shapiro-Wilks-test** och **tvåsidiga T-test** fungerar!
 
   Det finns många fler variabler i datasetet än de enda två vi har tittat på - **smoking_status** och **general_health**.
 
